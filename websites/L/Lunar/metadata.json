@@ -1,0 +1,76 @@
+{
+  "$schema": "https://schemas.premid.app/metadata/1.16",
+  "apiVersion": 1,
+  "author": {
+    "name": "alex",
+    "id": "1253394430652846151"
+  },
+  "service": "Lunar",
+  "description": {
+    "en": "Lunar is a free platform to stream anime and read manga and light novels, with community features, playlists and more."
+  },
+  "url": "lunarx.to",
+  "regExp": "^https?[:][/][/](www[.])?lunarx[.]to[/]",
+  "version": "1.0.0",
+  "logo": "https://i.imgur.com/gglOSW4.png",
+  "thumbnail": "https://i.imgur.com/DULuDP3.png",
+  "color": "#895AF6",
+  "category": "anime",
+  "tags": [
+    "anime",
+    "manga",
+    "novel",
+    "streaming",
+    "reading"
+  ],
+  "settings": [
+    {
+      "id": "privacy",
+      "title": "Privacy Mode",
+      "icon": "fad fa-user-secret",
+      "value": false
+    },
+    {
+      "id": "browsingActivity",
+      "title": "Show Browsing Activity",
+      "icon": "fad fa-book-reader",
+      "value": true,
+      "if": {
+        "privacy": false
+      }
+    },
+    {
+      "id": "cover",
+      "title": "Show Cover",
+      "icon": "fad fa-images",
+      "value": true,
+      "if": {
+        "privacy": false
+      }
+    },
+    {
+      "id": "timestamps",
+      "title": "Show Timestamps",
+      "icon": "fad fa-stopwatch",
+      "value": true,
+      "if": {
+        "privacy": false
+      }
+    },
+    {
+      "id": "buttons",
+      "title": "Show Buttons",
+      "icon": "fad fa-compress-arrows-alt",
+      "value": true,
+      "if": {
+        "privacy": false
+      }
+    },
+    {
+      "id": "hideWhenPaused",
+      "title": "Hide When Paused",
+      "icon": "fad fa-pause",
+      "value": false
+    }
+  ]
+}
